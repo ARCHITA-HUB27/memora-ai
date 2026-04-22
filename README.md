@@ -76,27 +76,29 @@ AI: recalls name + interests + context
 
 ## 📂 Project Structure
 
+
 memora-ai/
+│
 ├── backend/
-│   ├── server.js
-│   ├── vectorMemory.js
 │   ├── models/
-│   │   └── chat.js
+│   ├── episodicMemory.js
+│   ├── semanticMemory.js
+│   ├── vectorMemory.js
+│   ├── similarity.js
+│   ├── server.js
 │   ├── package.json
-│   └── .env (not uploaded)
+│   └── .gitignore
 │
 ├── frontend/
-│   ├── public/
-│   │   └── index.html
 │   ├── src/
 │   │   ├── App.js
 │   │   ├── App.css
-│   │   ├── index.js
-│   │   └── reportWebVitals.js
-│   ├── package.json
+│   │   └── index.js
+│   ├── public/
+│   └── package.json
 │
-├── README.md
-└── .gitignore
+└── README.md
+
 
 
 ```
