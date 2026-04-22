@@ -1,0 +1,257 @@
+body{
+margin:0;
+font-family:Inter,Arial;
+background:#0b1220;
+color:white;
+}
+
+.app{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background:#0f172a;
+padding:20px;
+border-right:1px solid #1f2937;
+}
+
+.logo{
+margin-bottom:30px;
+}
+
+.sidebar-section{
+margin-bottom:40px;
+}
+
+.conversation{
+background:#1e293b;
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.conversation span{
+display:block;
+font-size:12px;
+opacity:0.6;
+}
+
+.new-chat{
+width:100%;
+padding:10px;
+background:#2563eb;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.clear-memory{
+margin-top:10px;
+width:100%;
+padding:10px;
+background:#ef4444;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* CHAT */
+
+.chat-area{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.memory-tabs{
+padding:15px;
+border-bottom:1px solid #1f2937;
+}
+
+.tab{
+margin-right:15px;
+padding:6px 12px;
+border-radius:20px;
+background:#1e293b;
+font-size:14px;
+}
+
+.tab.active{
+background:#2563eb;
+}
+
+.messages{
+flex:1;
+padding:20px;
+overflow-y:auto;
+}
+
+.user-msg{
+background:#2563eb;
+padding:10px;
+border-radius:10px;
+max-width:60%;
+margin-left:auto;
+margin-bottom:10px;
+}
+
+.ai-msg{
+background:#1e293b;
+padding:10px;
+border-radius:10px;
+max-width:60%;
+margin-bottom:10px;
+}
+
+.input-bar{
+display:flex;
+padding:15px;
+border-top:1px solid #1f2937;
+}
+
+.input-bar input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#1e293b;
+color:white;
+}
+
+.input-bar button{
+margin-left:10px;
+padding:12px 20px;
+border:none;
+background:#10b981;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+
+/* RIGHT PANEL */
+
+.memory-panel{
+width:320px;
+background:#0f172a;
+padding:20px;
+border-left:1px solid #1f2937;
+}
+
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.tags span{
+background:#334155;
+padding:6px 10px;
+border-radius:20px;
+margin-right:6px;
+font-size:12px;
+}
+
+.small{
+font-size:12px;
+opacity:0.6;
+}
+/* MEMORY DASHBOARD DATA */
+
+.memory-panel p{
+  margin:6px 0;
+  font-size:13px;
+}
+
+.memory-panel span{
+  display:inline-block;
+  margin:4px;
+}
+
+/* SCROLL FIX */
+
+.memory-panel{
+  overflow-y:auto;
+}
+
+/* OPTIONAL GLOW EFFECT (nice UI) */
+
+.card:hover{
+  transform:scale(1.02);
+  transition:0.2s;
+  box-shadow:0 0 10px rgba(37,99,235,0.3);
+}
+/* ===== PREMIUM UI ===== */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Chat bubbles improved */
+.user-msg, .ai-msg {
+  padding: 12px 14px;
+  border-radius: 14px;
+  line-height: 1.5;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/* User message */
+.user-msg {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  align-self: flex-end;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* AI message */
+.ai-msg {
+  background: #1e293b;
+  align-self: flex-start;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Typing animation */
+.ai-msg.typing {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Scroll smooth */
+.messages {
+  scroll-behavior: smooth;
+}
+
+/* Input focus glow */
+.input-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2563eb;
+}
+
+/* Button hover */
+.input-bar button:hover {
+  background: #059669;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* Memory panel scroll */
+.memory-panel {
+  overflow-y: auto;
+}
+
+/* Tags nicer */
+.tags span {
+  transition: 0.2s;
+}
+.tags span:hover {
+  background: #2563eb;
+}
